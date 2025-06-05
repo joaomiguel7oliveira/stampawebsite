@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: work sans;
+}
+
+body{
+    margin: none;
+}
+
+.logotipoCab{
+    width: 150px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 50px
+}
+
+.cab{
+    display: flex;
+    justify-content: center;
+    gap: 12%;
+    background-color: #0244B0;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#cabecalho{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    flex-basis: 1400px;
+}
+
+header nav{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.ulCab{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    column-gap: 20px;
+    row-gap: 10px;
+    padding: 0px;
+    font-weight: bold;
+}
+
+.ulCab li{
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+    /*white-space: nowrap;*/
+}
+
+.carrossel1{
+    background-color: #0244B0;
+    overflow: hidden;
+}
+
+.carrossel1 img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.container1{
+    overflow: hidden;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('./links/mapa Sobradinho 2.png');
+    background-size: cover;
+    background-position: center bottom;
+    font-size: 25px;
+    text-align: center;
+}
+
+.container1 img{
+    filter: drop-shadow(1px 3px 2px rgba(0,0,0,0.5));
+}
+
+.centrar{
+    max-width: 350px;
+}
+
+.centrar img{
+    margin: auto;
+    display: flex;
+    justify-content: center; /* alinha horizontalmente */
+    align-items: center; 
+}
+
+.secao1{
+    max-width: 1400px;
+    text-align: center;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin: auto;
+}
+
+#containerBt1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#containerBt1 button{
+    margin: 20px;
+}
+
+hr{
+    width: 60%;
+    height: 2px;
+    background-color: #FFCC00;
+    border: none;
+    margin: 20px 0;
+}
+
+.secao1 ul{
+    text-align: left;
+}
+
+.secao1 h3{
+    font-size: 30px;
+}
+
+.secao1 li{
+    font-size: 20px;
+}
+
+.secao1 h2{
+    font-size: 40px;
+    margin-top: 60px;
+}
+
+
+
+
+
+
+
+footer{
+    background-color: #0244B0;
+    color: white;
+    margin-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+footer hr{
+    width: 100%;
+}
+
+footer h2{
+    font-size: 22px;
+}
+
+#secaorp {
+    max-width: 1400px;
+    text-align: center;
+    display: flex;
+    flex-direction: column; 
+    margin: auto;
+}
+
+.secaorp2{
+  display: flex;
+  justify-content: center;    /* centraliza horizontalmente */
+  align-items: flex-start;
+  flex-wrap: wrap;
+  row-gap: 30px;
+}
+
+#containerRp1{
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    padding-left: 5%;
+}
+
+#containerRp1 h2{
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    right: 5%;    
+}
+
+.colrp{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    row-gap: 10px;
+}
+
+.colrp *{
+    margin: 0px;
+}
+
+#copy{
+    max-width: 1400px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+.icone{
+    max-height: 90%;
+}
+
+button img{
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+.btGm{
+    width: 200px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    font-size: 15px;
+    width: 250px;
+    background-color: rgb(172, 23, 23);
+    border: none;
+}
+
+.btWp{
+    width: 200px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    font-size: 15px;
+    background: linear-gradient(to bottom, #44EC62, #20CC42);
+    border-radius: 10px;
+    border: none;
+}
+
+#btCm2{
+    background-color: #1760D8;
+    border-radius: 0px;
+}
+
+#btWp2{
+    border-radius: 0px;
+}
+
+#btCm2 img{
+    max-height: 60%;
+}
+
+#btWp2 img{
+    max-height: 70%;
+}
+
+.btGm img{
+    position: relative;
+    bottom: 3px;
+}
+
+.btCm{
+    width: 200px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    font-size: 15px;
+    border-radius: 10px;
+    border: none;
+}
+
+#btWp1, #btCm1{
+    display: flex;
+    justify-content: center;
+    padding-right: 20px;
+    width: 300px;
+    height: 50px;
+    font-size: 22px;
+}
+
+#btCm1{
+    background: linear-gradient(to bottom, #1760D8, #0244B0);
+}
+
+h2{
+    font-size: 30px;
+}
