@@ -1,6 +1,5 @@
 @media (max-width: 750px) {
   body {
-    background-color: lightblue;
   }
 
   /*CABEÇALHO*/
@@ -61,7 +60,7 @@
   .secaorp2{
     flex-direction: column;
   }
-  
+
   .colrp{
     display: flex;
     align-items: center;
