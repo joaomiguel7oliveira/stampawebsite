@@ -20,18 +20,12 @@
 
   }
 
+  .container1 h2{
+    font-size: 35px;
+  }
 
 
   /*SECAO1*/
-  .secao1{
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-
-  .secao1 h2{
-    font-size: 40px;
-    margin-bottom: 5px;
-  }
   .secao1 h3{
     width: 100%;
     text-align: left;
@@ -65,24 +59,12 @@
 
   .secaorp2{
     flex-direction: column;
+    align-items: center;
   }
 
   .colrp{
     display: flex;
     align-items: center;
     min-width: 30px;
-  }
-
-  #btWp2{
-    margin-top: 10px;
-  }
-
-  #btWp2, #btCm2, .btGm{
-    width: 250px;
-    display: flex;
-    justify-content: center;
-    font-size: 17px;
-    gap: 20px;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
   }
 }
