@@ -50,18 +50,24 @@ body {
   order: 1;
 }
 
+.container1{
+  height: 300px;
+}
+
 .container1 h2{
   font-size: 30px;
-  text-align: left;
   padding-left: 30px;
+  margin-bottom: 0px;
 }
 
 /*SECAO1*/
 .secao1 h2, .secao1 h3{
   font-size: 30px;
-  text-align: left;
-  align-self: flex-start;
   padding-left: 0px;
+}
+
+.secao1 h2, .secao1 hr{
+  margin-top: 0px;
 }
 
 #servicos{
