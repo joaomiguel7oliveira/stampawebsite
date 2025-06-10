@@ -28,11 +28,25 @@ body {
 }
 .chamadaBanner{
   order: 2;
-  min-height: 350px;
+  padding-top: 10px;
 }
+
+  .chamadaBanner hr{
+    margin-bottom: 30px;
+    margin-left: 20px;
+    width: 100%;
+  }
+
+  .chamadaBanner p{
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
 
 .contImgBanner{
   width: 100%;
+  min-width: 50px;
   order: 1;
 }
 
@@ -83,7 +97,8 @@ body {
 
 .colrp{
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   min-width: 30px;
+  margin: 0px;
 }
 }
