@@ -123,7 +123,7 @@
                     <p>Seg-Sex: 08:00 às 18:00</p>
                     <p>Sábabo: 08:00 às 12:00</p>
                     <p>Domingo: fechado</p>
-                    <h4>Fornecedor:</h4>
+                    <h4>Autorizada:</h4>
                     <img src="links/logo-rossi.svg" alt="Logo Rossi">
                 </div>
             </div>
@@ -219,6 +219,11 @@
 
     // inicia o loop automático
     iniciarIntervalo();
+
+    banners.forEach(banner => {
+      const img = new Image();
+      img.src = banner.imagem;
+    });
 
     
 </script>
