@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="midia2.css">
     <style>
-        /* Estilo interno opcional*/
-        /** {
+        /* Estilo interno opcional
+        * {
             border: 1px solid rgba(166, 166, 166, 0.139);
         }*/
     </style>
@@ -20,17 +20,27 @@
             <img class="logotipoCab" src="links/stampa-logo.svg" alt="Logotipo Stampa">
             <nav>
                 <ul class="ulCab">
-                    <li><a href="#">Vidraçaria & Serralheria</a></li>
-                    <li><a href="#">Automação de portões</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="#servicos">Vidraçaria & Serralheria</a></li>
+                    <li><a href="#servicos">Automação de portões</a></li>
+                    <li><a  href="https://wa.me/seunumerodetelefone" target="_blank" >Contato</a></li>
+                    <li><a href="https://maps.app.goo.gl/VLXW87EuJzmXnKdw8" target="_blank" >Endereço</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <main>
-        <div class="carrossel1">
-            <img src="links/Banner 1.png" alt="Automação de portões">
+        <div class="carrossel1" id="carrossel1">
+
+            <div class="chamadaBanner" id="chamadaBanner">
+                <p id="textoBanner">Instalação de box de vidro temperado.</p>
+                <hr>
+            </div>
+
+            <div class="contImgBanner">
+                <img class="imgBanner" id="imgBanner" src="links/imagens-banner/box-banheiro.png" alt="box-banheiro">
+            </div>
+
         </div>
         
         <div class="container1">
@@ -45,30 +55,31 @@
             <h2>Entre em contato conosco e faça um orçamento.</h2>
             <div id="containerBt1">
 
-                <button class="btWp" id="btWp1">
+                <a  href="https://wa.me/seunumerodetelefone" target="_blank" class="btWp" id="btWp1">
                     <img class="icone" src="links/Símbolo do WhatsApp.svg" alt="símbolo Whatsapp">
                     Whatsapp
-                </button>
-                <button class="btCm" id="btCm1">
+                </a>
+                <a  href="tel:+5511999999999" class="btCm" id="btCm1">
                     <img class="icone" src="links/Ícone de telefone.svg" alt="Ícone de telefone">
                     Fazer ligação
-                </button>
+                </a>
 
             </div>
-            <h2>Serviços</h2>
+            <h2 id="servicos">Serviços</h2>
             <hr>
             <h3>Vidraçaria</h3>
             <ul>
-                <li>Instalação de portas de vidro temperado.</li>
-                <li>Blindex para banheiros, salas, quartos e escritórios.</li>
-                <li>Janelas de correr, pivotantes e outros modelos.</li>
-                <li>Molduras para espelhos e porta-retratos</li>
+                <li>Instalação profissional de portas em vidro temperado.</li>
+                <li>Vidros blindex para banheiros, salas, quartos e escritórios.</li>
+                <li>Janelas de correr, pivotantes e modelos personalizados.</li>
+                <li>Molduras para espelhos e porta-retratos com acabamento impecável.</li>
+                <li>Espelhos sob medida e redondos, perfeitos para valorizar qualquer ambiente com estilo e elegância.</li>
             </ul>
             <h3>Automação de portões</h3>
             <ul>
-                <li>Instalação e manutenção de portões automáticos.</li>
-                <li>Reparo e codificação de controles.</li>
-                <li>Portões elétricos deslizantes e basculantes.</li>
+                <li>Instalação e manutenção especializada de portões automáticos.</li>
+                <li>Reparo e codificação de controles remotos.</li>
+                <li>Portões elétricos deslizantes e basculantes para sua segurança e conforto.</li>
             </ul>
         </section>
     </main>
@@ -87,23 +98,23 @@
                     <h3>Telefone Stampa</h3>
                     <p>(61) 98402-0458</p>
                     <p>(61) 3591-0444</p>
-                    <button class="btWp" id="btWp2">
+                    <a href="https://wa.me/seunumerodetelefone" target="_blank" class="btWp" id="btWp2">
                         <img class="icone" src="links/Símbolo do WhatsApp.svg" alt="símbolo Whatsapp">
                         Whatsapp
-                    </button>
-                    <button class="btCm" id="btCm2">
+                    </a>
+                    <a  href="tel:+5511999999999" class="btCm" id="btCm2">
                         <img class="icone" src="links/Ícone de telefone.svg" alt="Ícone de telefone">
                         Fazer ligação
-                    </button>
+                    </a>
                 </div>
 
                 <div class="colrp">
                     <h3>Endereço</h3>
                     <p>Quadra 9 CL 28 loja 6 Sobradinho - DF</p>
-                    <button class="btGm">
+                    <a href="https://maps.app.goo.gl/VLXW87EuJzmXnKdw8" target="_blank" class="btGm">
                         <img class="icone" src="links/iconeGm.svg" alt="simbolo maps">
                         Link Google Maps
-                    </button>
+                    </a>
                 </div>
 
                 <div class="colrp">
@@ -120,4 +131,95 @@
     </footer>
 
 </body>
+<script>
+    const banners = [
+    {
+        texto: "Instalação de box de vidro temperado.",
+        imagem: "links/imagens-banner/box-banheiro.png",
+        cor: "#453F36"
+    },
+    {
+        texto: "Espelhos de diversos tamanhos e estilos.",
+        imagem: "links/imagens-banner/espelho.png",
+        cor: "#014046"
+    },
+    {
+        texto: "Janelas, portas e boxes de vidro temperado para a sua residência.",
+        imagem: "links/imagens-banner/janela-de-vidro.png",
+        cor: "#6D675A"
+    },
+    {
+        texto: "Janelas, portas e boxes de vidro temperado para a sua residência.",
+        imagem: "links/imagens-banner/porta-de-vidro.png",
+        cor: "#203204"
+    },
+    {
+        texto: "Automação para portões deslizantes e basculantes.",
+        imagem: "links/imagens-banner/portao-automatico.png",
+        cor: "#466799"
+    },
+    {
+        texto: "Automação para portões deslizantes e basculantes.",
+        imagem: "links/imagens-banner/portao-automatico-basculante.png",
+        cor: "#1D1F1C"
+    },
+    {
+        texto: "Molduras para porta-retratos e espelhos sob medida.",
+        imagem: "links/imagens-banner/porta-retrato.png",
+        cor: "#615348"
+    }
+    ];
+
+    let indiceAtual = 0;
+
+    function trocarBanner() {
+        const img = document.getElementById("imgBanner");
+        const texto = document.getElementById("textoBanner");
+        const chamada = document.getElementById("carrossel1");
+
+        // Efeito de fade-out
+        img.style.opacity = 0;
+        texto.style.opacity = 0;
+
+        setTimeout(() => {
+            indiceAtual = (indiceAtual + 1) % banners.length;
+            const atual = banners[indiceAtual];
+
+            texto.textContent = atual.texto;
+            img.src = atual.imagem;
+            chamada.style.backgroundColor = atual.cor;
+
+            // Fade-in
+            img.style.opacity = 1;
+            texto.style.opacity = 1;
+        }, 300);
+    }
+
+    let intervalo;
+
+    function iniciarIntervalo() {
+    intervalo = setInterval(trocarBanner, 5000);
+    }
+
+    function resetarIntervalo() {
+    clearInterval(intervalo);
+    iniciarIntervalo();
+    }
+
+    document.getElementById("imgBanner").addEventListener("click", () => {
+    trocarBanner();
+    resetarIntervalo();
+    });
+
+    document.getElementById("carrossel1").addEventListener("click", () => {
+    trocarBanner();
+    resetarIntervalo();
+    });
+
+    // inicia o loop automático
+    iniciarIntervalo();
+
+    
+</script>
+
 </html>

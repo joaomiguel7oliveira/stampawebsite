@@ -16,12 +16,13 @@ body{
 }
 
 .cab{
+    transition: all 0.7s ease;
     display: flex;
     justify-content: center;
     gap: 12%;
-    background-color: #0244B0;
-    padding-left: 50px;
-    padding-right: 50px;
+    background-color: #003894;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 #cabecalho{
@@ -45,10 +46,10 @@ header nav{
     align-items: center;
     flex-wrap: wrap;
     list-style-type: none;
-    column-gap: 20px;
+    column-gap: 30px;
     row-gap: 10px;
     padding: 0px;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 .ulCab li{
@@ -57,19 +58,81 @@ header nav{
 li a{
     text-decoration: none;
     color: white;
+    font-size: 20px;
     /*white-space: nowrap;*/
 }
 
-.carrossel1{
-    background-color: #0244B0;
-    overflow: hidden;
+  /*Banner*/
+@media (min-width: 1500px) {
+
+    .carrossel1{
+        transition: all 0.7s ease;
+        padding-right: 10%;
+        padding-left: 5%;
+    }
+    
+    .cab{
+        transition: all 0.7s ease;
+        padding-right: 10%;
+        padding-left: 13%;
+    }
 }
 
-.carrossel1 img{
+.carrossel1{
+    transition: all 0.7s ease;
+    background-color: #453F36;
+    display: flex;
+    justify-content: space-between;
+    height: 400px;
+}
+  .chamadaBanner{
+    flex: 1;
+    color: white;
+    display: flex;
+    align-content: flex-end;
+    flex-wrap: wrap;
+  }
+
+  .chamadaBanner hr{
+    margin-left: 20%;
+    margin-bottom: 70px;
+    width: 90%;
+    background-color: #FFD2B3;
+  }
+
+  .chamadaBanner p{
+    margin-left: 20%;
+    font-size: clamp(35px, 4vw, 45px);
+    font-weight: 500;
+    width: 70%;
+    padding-right: 40px;
+    max-width: 450px;
+  }
+
+  .contImgBanner{
+    width: 50%;
+    min-width: 400px;
+    overflow: hidden;
+    display: flex;
+  }
+
+  .imgBanner{
     width: 100%;
     object-fit: cover;
+  }
+  #imgBanner {
+  transition: opacity 0.5s ease;
 }
 
+#chamadaBanner {
+  transition: background-color 0.5s ease;
+}
+
+#textoBanner {
+  transition: opacity 0.5s ease;
+}
+
+  /**/
 .container1{
     overflow: hidden;
     height: 400px;
@@ -84,6 +147,7 @@ li a{
 }
 
 .container1 img{
+    width: 90px;
     filter: drop-shadow(1px 3px 2px rgba(0,0,0,0.5));
 }
 
@@ -115,7 +179,7 @@ li a{
     justify-content: center;
 }
 
-#containerBt1 button{
+#containerBt1 a{
     margin: 20px;
 }
 
@@ -129,6 +193,7 @@ hr{
 
 .secao1 ul{
     text-align: left;
+    max-width: 650px;
 }
 
 .secao1 h3{
@@ -151,11 +216,17 @@ hr{
 
 
 footer{
-    background-color: #0244B0;
+    background-color: #003894;
     color: white;
     margin-top: 50px;
     padding-left: 50px;
     padding-right: 50px;
+    padding-top: 20px;
+}
+
+footer::selection {
+  background: #2f2f2f;  /* cor do fundo da seleção */
+  color: white;         /* cor do texto selecionado */
 }
 
 footer hr{
@@ -163,6 +234,7 @@ footer hr{
 }
 
 footer h2{
+
     font-size: 22px;
 }
 
@@ -215,6 +287,7 @@ footer h2{
     margin-top: 30px;
     padding-bottom: 30px;
     text-align: center;
+    margin-bottom: 0px;
 }
 
 
@@ -228,7 +301,7 @@ footer h2{
     max-height: 90%;
 }
 
-button img{
+a img{
     margin-left: 10px;
     margin-right: 20px;
 }
@@ -236,14 +309,16 @@ button img{
 .btGm{
     width: 200px;
     height: 40px;
+    margin-top: 15px;
     display: flex;
     align-items: center;
     font-weight: bold;
     color: white;
     font-size: 15px;
     width: 250px;
-    background-color: rgb(172, 23, 23);
+    background-color: rgb(205, 18, 18);
     border: none;
+    text-decoration: none;
 }
 
 .btWp{
@@ -257,15 +332,19 @@ button img{
     background: linear-gradient(to bottom, #44EC62, #20CC42);
     border-radius: 10px;
     border: none;
+    text-decoration: none;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 #btCm2{
     background-color: #1760D8;
     border-radius: 0px;
+    text-decoration: none;
 }
 
 #btWp2{
     border-radius: 0px;
+    text-decoration: none;
 }
 
 #btCm2 img{
@@ -291,6 +370,7 @@ button img{
     font-size: 15px;
     border-radius: 10px;
     border: none;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 #btWp1, #btCm1{
@@ -300,10 +380,12 @@ button img{
     width: 300px;
     height: 50px;
     font-size: 22px;
+    text-decoration: none;
 }
 
 #btCm1{
     background: linear-gradient(to bottom, #1760D8, #0244B0);
+    text-decoration: none;
 }
 
 
@@ -325,5 +407,5 @@ button img{
     justify-content: center;
     font-size: 17px;
     gap: 20px;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
   }
