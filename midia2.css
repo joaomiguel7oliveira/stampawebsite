@@ -51,18 +51,37 @@ body {
 }
 
 .container1 h2{
-  font-size: 35px;
+  font-size: 30px;
+  text-align: left;
+  padding-left: 30px;
 }
 
 /*SECAO1*/
+.secao1 h2, .secao1 h3{
+  font-size: 30px;
+  text-align: left;
+  align-self: flex-start;
+  padding-left: 0px;
+}
+
+#servicos{
+  align-self: center;
+  font-size: 35px;
+  margin-top: 50px;
+}
+
+#btWp1, #btCm1{
+  width: 80%;
+  white-space: nowrap;
+}
+
 .secao1 h3{
   width: 100%;
   text-align: left;
-  padding-left: 10%;
 }
 
 .secao1 hr{
-  width: 80%;
+  width: 100%;
 }
 
 .secao1 li{
